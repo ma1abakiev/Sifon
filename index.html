@@ -1,210 +1,317 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="./assets/image/icon.svg" type="image/x-icon">
-        <link rel="stylesheet" href="style.css">
-        <title>Sifon.kg</title>
-    </head>
-    <body>
-
-    <section class="departure">
-        <div class="container">
-            <div class="departure-content">
-                <img src="./assets/image/departureMaster.png" alt="" class="departure-img">
-                <div class="departure-box">
-                    <p class="departure-text">Вы можете  вызвать мастера, он приедет и даст консультацию.</p>
-                    <a href="#" class="button">Вызвать</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="about-us">
-        <div class="container">
-            <div class="about-content">
-                <h3 class="title">О нас</h3>
-                <p class="subtitle">Узнайте о нас больше</p>
-                <div class="about-box">
-                    <p class="title about-title">Sifon.kg</p>
-                    <p class="about-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="equipment">
-        <div class="container">
-            <h3 class="title">Наше оборудование</h3>
-            <p class="subtitle">Узнайте ооборудование и способы <br> которые мы используем </p>
-            <div class="equipment-content">
-                <div class="equipment-slider">
-                    <div class="equipment-inner">
-                        <img src="./assets/image/hydro-equipment.png" alt="hydro">
-                        <div class="equipment-info">
-                            <p class="title equipment-title">Гидродинамическая промывка</p>
-                            <p class="equipment-text">
-                                Гидродинамическая прочистка канализации – это способ, с помощью которого проводится промывка с использованием сильной струи воды под давлением. Мощный напор удаляет и разбивает отложения со стенок труб, возвращая им прежнюю проходимость. 
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="feedback">
-        <div class="container">
-
-            <h3 class="title">Отзывы</h3>
-            <p class="subtitle">Узнайте почему клиенты <br> нам доверяют</p>
-            <div class="feedback-wrapper">
-                <div class="feedback-contollers">
-                    <div class="feedback-left" onclick="sliderActive(-1)">
-                        <img src="./assets/image/chevron.svg" alt="left">
-                    </div>
-                    <div class="feedback-right" onclick="sliderActive(1)">
-                        <img src="./assets/image/chevron.svg" alt="right">
-                    </div>
-                </div>
-                <div class="feedback-slider first-feedback">
-                    <div class="feedback-content">
-                        <div class="feedback-img">
-                        <img src="./assets/image/Ellipse 1.png" alt="">
-                        </div>
-                        <div class="feedback-box">
-                            <p class="feedback-text">
-                                Когда понадобилось срочно решить проблему засора трубы, то я позвонила специалистам. Приехали быстро, прочистили трубу своим оборудованием. Цены приятно удивили. Рассказала друзьям, которые тоже остались довольны. 
-                            </p>
-                            <p class="feedback-author">Данияр    31.10.2022</p>
-                        </div>
-                        <div class="feedback-rating">
-                            <img src="./assets/image/star.svg" alt="star">
-                            <img src="./assets/image/star.svg" alt="star">
-                            <img src="./assets/image/star.svg" alt="star">
-                            <img src="./assets/image/star.svg" alt="star">
-                            <img src="./assets/image/star.svg" alt="star">
-                        </div>
-                    </div>
-                </div>
-                <div class="feedback-slider second-feedback">
-                    <div class="feedback-content">
-                        <div class="feedback-img">
-                            <img src="./assets/image/Ellipse 2.png" alt="">
-                        </div>
-                        <div class="feedback-box">
-                            <p class="feedback-text">
-                                Очень профессионально, очень быстро и очень дружелюбно. Они пришли и починили забитый слив, который у меня был в течение часа после того, как я позвонил по поводу проблемы. Я очень рекомендую этот сервис. В следующий раз, когда у меня возникнет проблема, я 100% позвоню сюда снова.
-                            </p>
-                            <p class="feedback-author">Азамат    20.04.2022</p>
-                        </div>
-                        <div class="feedback-rating">
-                            <img src="./assets/image/star.svg" alt="star">
-                            <img src="./assets/image/star.svg" alt="star">
-                            <img src="./assets/image/star.svg" alt="star">
-                            <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M23.4986 3.08007L23.4982 3.07931C22.9462 1.96304 21.8182 1.51776 20.8766 1.51776C19.9346 1.51776 18.8093 1.96264 18.2537 3.0731L18.2537 3.07309L18.2499 3.08071L13.8554 11.9907L4.02516 13.419L4.02487 13.419C2.93506 13.5776 2.00696 14.3391 1.6601 15.4104L1.65936 15.4127C1.32107 16.4634 1.59701 17.6315 2.40602 18.4108L9.51764 25.3445L7.83828 35.133L7.83707 35.1403C7.65669 36.2241 8.09398 37.3426 9.00741 38.002C9.90018 38.6465 11.092 38.7466 12.0864 38.2167C12.0885 38.2155 12.0907 38.2144 12.0929 38.2132L20.8774 33.5992L29.6638 38.2174C29.6646 38.2178 29.6654 38.2183 29.6662 38.2187C30.112 38.4537 30.5836 38.5531 31.0331 38.5531C31.6349 38.5531 32.2301 38.3701 32.7392 38.0077L32.7478 38.0016L32.7563 37.9954C33.6561 37.3353 34.0989 36.2305 33.9175 35.1403L33.9162 35.133L32.2369 25.3445L39.3511 18.4082C40.1574 17.6239 40.4274 16.4646 40.0906 15.4161C39.7517 14.3476 38.8221 13.5778 37.7294 13.419L37.5162 14.8858L37.7294 13.419L27.8987 11.9906L23.4986 3.08007Z" fill="#EFF0F6" stroke="white" stroke-width="2.96448"/>
-                                </svg>
-                                <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M23.4986 3.08007L23.4982 3.07931C22.9462 1.96304 21.8182 1.51776 20.8766 1.51776C19.9346 1.51776 18.8093 1.96264 18.2537 3.0731L18.2537 3.07309L18.2499 3.08071L13.8554 11.9907L4.02516 13.419L4.02487 13.419C2.93506 13.5776 2.00696 14.3391 1.6601 15.4104L1.65936 15.4127C1.32107 16.4634 1.59701 17.6315 2.40602 18.4108L9.51764 25.3445L7.83828 35.133L7.83707 35.1403C7.65669 36.2241 8.09398 37.3426 9.00741 38.002C9.90018 38.6465 11.092 38.7466 12.0864 38.2167C12.0885 38.2155 12.0907 38.2144 12.0929 38.2132L20.8774 33.5992L29.6638 38.2174C29.6646 38.2178 29.6654 38.2183 29.6662 38.2187C30.112 38.4537 30.5836 38.5531 31.0331 38.5531C31.6349 38.5531 32.2301 38.3701 32.7392 38.0077L32.7478 38.0016L32.7563 37.9954C33.6561 37.3353 34.0989 36.2305 33.9175 35.1403L33.9162 35.133L32.2369 25.3445L39.3511 18.4082C40.1574 17.6239 40.4274 16.4646 40.0906 15.4161C39.7517 14.3476 38.8221 13.5778 37.7294 13.419L37.5162 14.8858L37.7294 13.419L27.8987 11.9906L23.4986 3.08007Z" fill="#EFF0F6" stroke="white" stroke-width="2.96448"/>
-                                    </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="feedback-slider third-feedback">
-                    <div class="feedback-content">
-                        <div class="feedback-img">
-                            <img src="./assets/image/Ellipse 3.png" alt="">
-                        </div>
-                        <div class="feedback-box">
-                            <p class="feedback-text">
-                                У меня была большая проблема с полностью засоренной ливневой канализацией. Корни дерева перед домом проникли в трубу и заблокировали ее. Итак, я поискал в Google местных сантехников и нашел их.Они быстро справились с задачей
-                            </p>
-                            <p class="feedback-author">Марина   03.11.2022</p>
-                        </div>
-                        <div class="feedback-rating">
-                            <img src="./assets/image/star.svg" alt="star">
-                            <img src="./assets/image/star.svg" alt="star">
-                            <img src="./assets/image/star.svg" alt="star">
-                            <img src="./assets/image/star.svg" alt="star">
-                            <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M23.4986 3.08007L23.4982 3.07931C22.9462 1.96304 21.8182 1.51776 20.8766 1.51776C19.9346 1.51776 18.8093 1.96264 18.2537 3.0731L18.2537 3.07309L18.2499 3.08071L13.8554 11.9907L4.02516 13.419L4.02487 13.419C2.93506 13.5776 2.00696 14.3391 1.6601 15.4104L1.65936 15.4127C1.32107 16.4634 1.59701 17.6315 2.40602 18.4108L9.51764 25.3445L7.83828 35.133L7.83707 35.1403C7.65669 36.2241 8.09398 37.3426 9.00741 38.002C9.90018 38.6465 11.092 38.7466 12.0864 38.2167C12.0885 38.2155 12.0907 38.2144 12.0929 38.2132L20.8774 33.5992L29.6638 38.2174C29.6646 38.2178 29.6654 38.2183 29.6662 38.2187C30.112 38.4537 30.5836 38.5531 31.0331 38.5531C31.6349 38.5531 32.2301 38.3701 32.7392 38.0077L32.7478 38.0016L32.7563 37.9954C33.6561 37.3353 34.0989 36.2305 33.9175 35.1403L33.9162 35.133L32.2369 25.3445L39.3511 18.4082C40.1574 17.6239 40.4274 16.4646 40.0906 15.4161C39.7517 14.3476 38.8221 13.5778 37.7294 13.419L37.5162 14.8858L37.7294 13.419L27.8987 11.9906L23.4986 3.08007Z" fill="#EFF0F6" stroke="white" stroke-width="2.96448"/>
-                                </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="feedback-slider fourteen-feedback">
-                    <div class="feedback-content">
-                        <div class="feedback-img">
-                            <img src="./assets/image/Ellipse 3.png" alt="">
-                        </div>
-                        <div class="feedback-box">
-                            <p class="feedback-text">
-                                У нас перенесена кухня. Расстояние от мойки до стояка примерно 10 метров. Много изгибов сливной трубы и своими силами прочистить засор было не возможно. В итоге вызывали специалистов из Sifon.kg.  Пробили все засоры, после своей работы оставили помещение в чистом состоянии.  </p>
-                            <p class="feedback-author">Мадина  04.12.2022</p>
-                        </div>
-                        <div class="feedback-rating">
-                            <img src="./assets/image/star.svg" alt="star">
-                            <img src="./assets/image/star.svg" alt="star">
-                            <img src="./assets/image/star.svg" alt="star">
-                            <img src="./assets/image/star.svg" alt="star">
-                            <svg width="42" height="41" viewBox="0 0 42 41" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M23.4986 3.08007L23.4982 3.07931C22.9462 1.96304 21.8182 1.51776 20.8766 1.51776C19.9346 1.51776 18.8093 1.96264 18.2537 3.0731L18.2537 3.07309L18.2499 3.08071L13.8554 11.9907L4.02516 13.419L4.02487 13.419C2.93506 13.5776 2.00696 14.3391 1.6601 15.4104L1.65936 15.4127C1.32107 16.4634 1.59701 17.6315 2.40602 18.4108L9.51764 25.3445L7.83828 35.133L7.83707 35.1403C7.65669 36.2241 8.09398 37.3426 9.00741 38.002C9.90018 38.6465 11.092 38.7466 12.0864 38.2167C12.0885 38.2155 12.0907 38.2144 12.0929 38.2132L20.8774 33.5992L29.6638 38.2174C29.6646 38.2178 29.6654 38.2183 29.6662 38.2187C30.112 38.4537 30.5836 38.5531 31.0331 38.5531C31.6349 38.5531 32.2301 38.3701 32.7392 38.0077L32.7478 38.0016L32.7563 37.9954C33.6561 37.3353 34.0989 36.2305 33.9175 35.1403L33.9162 35.133L32.2369 25.3445L39.3511 18.4082C40.1574 17.6239 40.4274 16.4646 40.0906 15.4161C39.7517 14.3476 38.8221 13.5778 37.7294 13.419L37.5162 14.8858L37.7294 13.419L27.8987 11.9906L23.4986 3.08007Z" fill="#EFF0F6" stroke="white" stroke-width="2.96448"/>
-                                </svg>
-                        </div>
-                    </div>
-                </div>
-                <div class="feedback-dots">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <div class="messanger">
-        <div class="whatsapp" id="whatsapp">
-          <img src="./assets/image/whatsapp.svg" alt="" />
-        </div>
-        <div class="instagram" id="instagram">
-            <img src="./assets/image/instagram.svg"  alt="">
-        </div>
-        <div class="telegram" id="telegram">
-            <img src="./assets/image/telegram.svg" alt="">
-        </div>
-        <div class="message" id="message">
-          <img
-            src="./assets/image/helpIcon.svg"
-            class="message-all"
-            id="message-all"
-            alt=""
-          />
-          <img
-            src="./assets/image/closeIcon.svg"
-            id="message-close"
-            class="message-close"
-            alt=""
-          />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/image/icon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sifon.kg</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <img src="./assets/image/Logo.svg" alt="" class="header__logo" />
+          <nav class="header__nav">
+            <a href="" class="header__link">Наши услуги</a
+            ><a href="" class="header__link">Наши работы</a
+            ><a href="" class="header__link">Наше оборудование</a
+            ><a href="" class="header__link">Отзывы</a
+            ><a href="" class="header__link">О нас</a
+            ><a href="" class="header__link">Контакты</a>
+          </nav>
         </div>
       </div>
-      <div class="phone">       
-        <div class="phone-tele">
-           <a href="#" class="phone-btn">
-            Позвонить
-            <img src="./assets/image/beeline.svg" alt="">
-           </a>
-           <a href="#" class="phone-btn oshka">
-            Позвонить
-            <img src="./assets/image/o!.png" alt="">
-           </a>
-           <a href="#" class="phone-btn mega">
-            Позвонить
-            <img src="./assets/image/mega.svg" alt="">
-           </a>
-       </div>
-       <img src="./assets/image/phone.svg" alt="" class="tel">
-     </div>
+    </header>
+    <section class="intro" id="intro">
+      <div class="intro__content">
+        <h1 class="intro__title">Чистка <br> канализации в Бишкеке</h1>
+      </div>
+    </section>
+
+    <section class="departure">
+      <div class="container">
+        <div class="departure-content">
+          <img
+            src="./assets/image/departureMaster.png"
+            alt=""
+            class="departure-img"
+          />
+          <div class="departure-box">
+            <p class="departure-text">
+              Вы можете вызвать мастера, он приедет и даст консультацию.
+            </p>
+            <a href="#" class="button">Вызвать</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about-us">
+      <div class="container">
+        <div class="about-content">
+          <h3 class="title">О нас</h3>
+          <p class="subtitle">Узнайте о нас больше</p>
+          <div class="about-box">
+            <p class="title about-title">Sifon.kg</p>
+            <p class="about-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="equipment">
+      <div class="container">
+        <h3 class="title">Наше оборудование</h3>
+        <p class="subtitle">
+          Узнайте ооборудование и способы <br />
+          которые мы используем
+        </p>
+        <div class="equipment-content">
+          <div class="equipment-slider">
+            <div class="equipment-inner">
+              <img src="./assets/image/hydro-equipment.png" alt="hydro" />
+              <div class="equipment-info">
+                <p class="title equipment-title">Гидродинамическая промывка</p>
+                <p class="equipment-text">
+                  Гидродинамическая прочистка канализации – это способ, с
+                  помощью которого проводится промывка с использованием сильной
+                  струи воды под давлением. Мощный напор удаляет и разбивает
+                  отложения со стенок труб, возвращая им прежнюю проходимость.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="container">
+        <h3 class="title">Отзывы</h3>
+        <p class="subtitle">
+          Узнайте почему клиенты <br />
+          нам доверяют
+        </p>
+        <div class="feedback-wrapper">
+          <div class="feedback-contollers">
+            <div class="feedback-left" onclick="sliderActive(-1)">
+              <img src="./assets/image/chevron.svg" alt="left" />
+            </div>
+            <div class="feedback-right" onclick="sliderActive(1)">
+              <img src="./assets/image/chevron.svg" alt="right" />
+            </div>
+          </div>
+          <div class="feedback-slider first-feedback">
+            <div class="feedback-content">
+              <div class="feedback-img">
+                <img src="./assets/image/Ellipse 1.png" alt="" />
+              </div>
+              <div class="feedback-box">
+                <p class="feedback-text">
+                  Когда понадобилось срочно решить проблему засора трубы, то я
+                  позвонила специалистам. Приехали быстро, прочистили трубу
+                  своим оборудованием. Цены приятно удивили. Рассказала друзьям,
+                  которые тоже остались довольны.
+                </p>
+                <p class="feedback-author">Данияр 31.10.2022</p>
+              </div>
+              <div class="feedback-rating">
+                <img src="./assets/image/star.svg" alt="star" />
+                <img src="./assets/image/star.svg" alt="star" />
+                <img src="./assets/image/star.svg" alt="star" />
+                <img src="./assets/image/star.svg" alt="star" />
+                <img src="./assets/image/star.svg" alt="star" />
+              </div>
+            </div>
+          </div>
+          <div class="feedback-slider second-feedback">
+            <div class="feedback-content">
+              <div class="feedback-img">
+                <img src="./assets/image/Ellipse 2.png" alt="" />
+              </div>
+              <div class="feedback-box">
+                <p class="feedback-text">
+                  Очень профессионально, очень быстро и очень дружелюбно. Они
+                  пришли и починили забитый слив, который у меня был в течение
+                  часа после того, как я позвонил по поводу проблемы. Я очень
+                  рекомендую этот сервис. В следующий раз, когда у меня
+                  возникнет проблема, я 100% позвоню сюда снова.
+                </p>
+                <p class="feedback-author">Азамат 20.04.2022</p>
+              </div>
+              <div class="feedback-rating">
+                <img src="./assets/image/star.svg" alt="star" />
+                <img src="./assets/image/star.svg" alt="star" />
+                <img src="./assets/image/star.svg" alt="star" />
+                <svg
+                  width="42"
+                  height="41"
+                  viewBox="0 0 42 41"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.4986 3.08007L23.4982 3.07931C22.9462 1.96304 21.8182 1.51776 20.8766 1.51776C19.9346 1.51776 18.8093 1.96264 18.2537 3.0731L18.2537 3.07309L18.2499 3.08071L13.8554 11.9907L4.02516 13.419L4.02487 13.419C2.93506 13.5776 2.00696 14.3391 1.6601 15.4104L1.65936 15.4127C1.32107 16.4634 1.59701 17.6315 2.40602 18.4108L9.51764 25.3445L7.83828 35.133L7.83707 35.1403C7.65669 36.2241 8.09398 37.3426 9.00741 38.002C9.90018 38.6465 11.092 38.7466 12.0864 38.2167C12.0885 38.2155 12.0907 38.2144 12.0929 38.2132L20.8774 33.5992L29.6638 38.2174C29.6646 38.2178 29.6654 38.2183 29.6662 38.2187C30.112 38.4537 30.5836 38.5531 31.0331 38.5531C31.6349 38.5531 32.2301 38.3701 32.7392 38.0077L32.7478 38.0016L32.7563 37.9954C33.6561 37.3353 34.0989 36.2305 33.9175 35.1403L33.9162 35.133L32.2369 25.3445L39.3511 18.4082C40.1574 17.6239 40.4274 16.4646 40.0906 15.4161C39.7517 14.3476 38.8221 13.5778 37.7294 13.419L37.5162 14.8858L37.7294 13.419L27.8987 11.9906L23.4986 3.08007Z"
+                    fill="#EFF0F6"
+                    stroke="white"
+                    stroke-width="2.96448"
+                  />
+                </svg>
+                <svg
+                  width="42"
+                  height="41"
+                  viewBox="0 0 42 41"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.4986 3.08007L23.4982 3.07931C22.9462 1.96304 21.8182 1.51776 20.8766 1.51776C19.9346 1.51776 18.8093 1.96264 18.2537 3.0731L18.2537 3.07309L18.2499 3.08071L13.8554 11.9907L4.02516 13.419L4.02487 13.419C2.93506 13.5776 2.00696 14.3391 1.6601 15.4104L1.65936 15.4127C1.32107 16.4634 1.59701 17.6315 2.40602 18.4108L9.51764 25.3445L7.83828 35.133L7.83707 35.1403C7.65669 36.2241 8.09398 37.3426 9.00741 38.002C9.90018 38.6465 11.092 38.7466 12.0864 38.2167C12.0885 38.2155 12.0907 38.2144 12.0929 38.2132L20.8774 33.5992L29.6638 38.2174C29.6646 38.2178 29.6654 38.2183 29.6662 38.2187C30.112 38.4537 30.5836 38.5531 31.0331 38.5531C31.6349 38.5531 32.2301 38.3701 32.7392 38.0077L32.7478 38.0016L32.7563 37.9954C33.6561 37.3353 34.0989 36.2305 33.9175 35.1403L33.9162 35.133L32.2369 25.3445L39.3511 18.4082C40.1574 17.6239 40.4274 16.4646 40.0906 15.4161C39.7517 14.3476 38.8221 13.5778 37.7294 13.419L37.5162 14.8858L37.7294 13.419L27.8987 11.9906L23.4986 3.08007Z"
+                    fill="#EFF0F6"
+                    stroke="white"
+                    stroke-width="2.96448"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="feedback-slider third-feedback">
+            <div class="feedback-content">
+              <div class="feedback-img">
+                <img src="./assets/image/Ellipse 3.png" alt="" />
+              </div>
+              <div class="feedback-box">
+                <p class="feedback-text">
+                  У меня была большая проблема с полностью засоренной ливневой
+                  канализацией. Корни дерева перед домом проникли в трубу и
+                  заблокировали ее. Итак, я поискал в Google местных сантехников
+                  и нашел их.Они быстро справились с задачей
+                </p>
+                <p class="feedback-author">Марина 03.11.2022</p>
+              </div>
+              <div class="feedback-rating">
+                <img src="./assets/image/star.svg" alt="star" />
+                <img src="./assets/image/star.svg" alt="star" />
+                <img src="./assets/image/star.svg" alt="star" />
+                <img src="./assets/image/star.svg" alt="star" />
+                <svg
+                  width="42"
+                  height="41"
+                  viewBox="0 0 42 41"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.4986 3.08007L23.4982 3.07931C22.9462 1.96304 21.8182 1.51776 20.8766 1.51776C19.9346 1.51776 18.8093 1.96264 18.2537 3.0731L18.2537 3.07309L18.2499 3.08071L13.8554 11.9907L4.02516 13.419L4.02487 13.419C2.93506 13.5776 2.00696 14.3391 1.6601 15.4104L1.65936 15.4127C1.32107 16.4634 1.59701 17.6315 2.40602 18.4108L9.51764 25.3445L7.83828 35.133L7.83707 35.1403C7.65669 36.2241 8.09398 37.3426 9.00741 38.002C9.90018 38.6465 11.092 38.7466 12.0864 38.2167C12.0885 38.2155 12.0907 38.2144 12.0929 38.2132L20.8774 33.5992L29.6638 38.2174C29.6646 38.2178 29.6654 38.2183 29.6662 38.2187C30.112 38.4537 30.5836 38.5531 31.0331 38.5531C31.6349 38.5531 32.2301 38.3701 32.7392 38.0077L32.7478 38.0016L32.7563 37.9954C33.6561 37.3353 34.0989 36.2305 33.9175 35.1403L33.9162 35.133L32.2369 25.3445L39.3511 18.4082C40.1574 17.6239 40.4274 16.4646 40.0906 15.4161C39.7517 14.3476 38.8221 13.5778 37.7294 13.419L37.5162 14.8858L37.7294 13.419L27.8987 11.9906L23.4986 3.08007Z"
+                    fill="#EFF0F6"
+                    stroke="white"
+                    stroke-width="2.96448"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="feedback-slider fourteen-feedback">
+            <div class="feedback-content">
+              <div class="feedback-img">
+                <img src="./assets/image/Ellipse 3.png" alt="" />
+              </div>
+              <div class="feedback-box">
+                <p class="feedback-text">
+                  У нас перенесена кухня. Расстояние от мойки до стояка примерно
+                  10 метров. Много изгибов сливной трубы и своими силами
+                  прочистить засор было не возможно. В итоге вызывали
+                  специалистов из Sifon.kg. Пробили все засоры, после своей
+                  работы оставили помещение в чистом состоянии.
+                </p>
+                <p class="feedback-author">Мадина 04.12.2022</p>
+              </div>
+              <div class="feedback-rating">
+                <img src="./assets/image/star.svg" alt="star" />
+                <img src="./assets/image/star.svg" alt="star" />
+                <img src="./assets/image/star.svg" alt="star" />
+                <img src="./assets/image/star.svg" alt="star" />
+                <svg
+                  width="42"
+                  height="41"
+                  viewBox="0 0 42 41"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.4986 3.08007L23.4982 3.07931C22.9462 1.96304 21.8182 1.51776 20.8766 1.51776C19.9346 1.51776 18.8093 1.96264 18.2537 3.0731L18.2537 3.07309L18.2499 3.08071L13.8554 11.9907L4.02516 13.419L4.02487 13.419C2.93506 13.5776 2.00696 14.3391 1.6601 15.4104L1.65936 15.4127C1.32107 16.4634 1.59701 17.6315 2.40602 18.4108L9.51764 25.3445L7.83828 35.133L7.83707 35.1403C7.65669 36.2241 8.09398 37.3426 9.00741 38.002C9.90018 38.6465 11.092 38.7466 12.0864 38.2167C12.0885 38.2155 12.0907 38.2144 12.0929 38.2132L20.8774 33.5992L29.6638 38.2174C29.6646 38.2178 29.6654 38.2183 29.6662 38.2187C30.112 38.4537 30.5836 38.5531 31.0331 38.5531C31.6349 38.5531 32.2301 38.3701 32.7392 38.0077L32.7478 38.0016L32.7563 37.9954C33.6561 37.3353 34.0989 36.2305 33.9175 35.1403L33.9162 35.133L32.2369 25.3445L39.3511 18.4082C40.1574 17.6239 40.4274 16.4646 40.0906 15.4161C39.7517 14.3476 38.8221 13.5778 37.7294 13.419L37.5162 14.8858L37.7294 13.419L27.8987 11.9906L23.4986 3.08007Z"
+                    fill="#EFF0F6"
+                    stroke="white"
+                    stroke-width="2.96448"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="feedback-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="messanger">
+      <div class="whatsapp" id="whatsapp">
+        <img src="./assets/image/whatsapp.svg" alt="" />
+      </div>
+      <div class="instagram" id="instagram">
+        <img src="./assets/image/instagram.svg" alt="" />
+      </div>
+      <div class="telegram" id="telegram">
+        <img src="./assets/image/telegram.svg" alt="" />
+      </div>
+      <div class="message" id="message">
+        <img
+          src="./assets/image/helpIcon.svg"
+          class="message-all"
+          id="message-all"
+          alt=""
+        />
+        <img
+          src="./assets/image/closeIcon.svg"
+          id="message-close"
+          class="message-close"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="phone">
+      <div class="phone-tele">
+        <a href="#" class="phone-btn">
+          Позвонить
+          <img src="./assets/image/beeline.svg" alt="" />
+        </a>
+        <a href="#" class="phone-btn oshka">
+          Позвонить
+          <img src="./assets/image/o!.png" alt="" />
+        </a>
+        <a href="#" class="phone-btn mega">
+          Позвонить
+          <img src="./assets/image/mega.svg" alt="" />
+        </a>
+      </div>
+      <img src="./assets/image/phone.svg" alt="" class="tel" />
+    </div>
     <script src="./app.js"></script>
-</body>
+  </body>
 </html>
