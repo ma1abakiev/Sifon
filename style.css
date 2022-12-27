@@ -184,7 +184,33 @@ body {
   font-size: 24px;
   line-height: 50px;
 }
-
+.jobs-wrapper{
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: repeat(2, 318px);
+  grid-template-columns: repeat(4, 318px);
+  gap: 6px;
+}
+.jobs-item{
+  grid-row: 1/4;
+  grid-column: 1/2;
+}
+.jobs-item:nth-child(2){
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+.jobs-item:nth-child(3){
+  grid-row: 1/2;
+  grid-column: 4/5;
+}
+.jobs-item:nth-child(4){
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+.jobs-item:last-child{
+  grid-row: 2/3;
+  grid-column: 4/5;
+}
 /* Departure */
 .departure-content {
   display: flex;
@@ -450,4 +476,79 @@ body {
 
 .phone-tele__active {
   transform: translateX(0);
+}
+.supfooter{
+  background-color: #fff;
+}
+.supfooter-content{
+  height: 150px;
+  background-image: url(./assets/image/supfooter.png);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.supfooter-question{
+  margin-left: 40px;
+  margin-right: 100px;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 61px;
+  color: #FFFFFF
+}
+.supfooter-text{
+  max-width: 475px;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+}
+.horn{
+  position: absolute;
+  left: 5%;
+  top: 6050px;
+}
+.footer{
+  background-color: #000;
+}
+.footer-content{
+  height: 252px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-copy{
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.005em;
+
+  color: #9B9999;
+}
+.footer-contact{
+  display: flex;
+  flex-direction: column;
+}
+.footer-link{
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0.03em;
+  color: #F2F2F2;
+  display: flex;
+  align-items: center;
+}
+.footer-btn{
+  padding: 10px 30px;
+  background: transparent;
+  color: var(--primary-color);
+  border: 2px solid #1CC8EE;
+  filter: drop-shadow(0px 4px 30px rgba(51, 51, 51, 0.1));
+  backdrop-filter: blur(5px);
+  /* Note: backdrop-filter has minimal browser support */
+  
+  border-radius: 5px;
+}
+.footer-link:hover{
+  color: var(--primary-color);
 }
