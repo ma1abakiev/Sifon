@@ -22,3 +22,43 @@ function sliderActive(i) {
     sliders[zero].style.display = 'block';
     dots[zero].className += " active"
 }
+
+
+const message = document.getElementById("message");
+const whatsapp = document.getElementById("whatsapp");
+const instagram = document.getElementById("instagram");
+const telegram = document.getElementById("telegram")
+const messageAll = document.getElementById("message-all");
+const messageClose = document.getElementById("message-close");
+
+
+    message.addEventListener("click", () => {
+      whatsapp.classList.toggle("whatsapp-active");
+      instagram.classList.toggle("instagram-active");
+      telegram.classList.toggle("telegram-active")
+      messageClose.classList.toggle("message-close__active");
+      messageAll.classList.toggle("message-all__active");
+    });
+
+
+const phone = document.querySelector('.tel')
+const tele = document.querySelector('.phone-tele')
+
+phone.addEventListener('click', () => {
+    tele.classList.toggle("phone-tele__active")
+})
+
+
+// Ma1abakiev code
+
+
+window.addEventListener('scroll', () => {
+    let scrollPos = window.pageYOffset
+    let pos = document.getElementById('intro').scrollHeight
+    if(scrollPos > (pos-80)) 
+        document.querySelector('.header').classList.add('active')
+    else 
+        document.querySelector('.header').classList.remove('active')
+
+
+})
