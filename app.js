@@ -73,9 +73,9 @@ window.addEventListener('scroll', () => {
 })
 
 
-const links = document.querySelectorAll('.header__link')
-for (let i = 0; i < links.length; i++) {
-  links[i].addEventListener('click', function () {
+const headerLinks = document.querySelectorAll('.header__link')
+for (let i = 0; i < headerLinks.length; i++) {
+  headerLinks[i].addEventListener('click', function () {
     document
       .getElementById(this.dataset.scroll)
       .scrollIntoView({ behavior: 'smooth' })
