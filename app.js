@@ -72,7 +72,6 @@ window.addEventListener('scroll', () => {
   else document.querySelector('.header').classList.remove('active')
 })
 
-
 const headerLinks = document.querySelectorAll('.header__link')
 for (let i = 0; i < headerLinks.length; i++) {
   headerLinks[i].addEventListener('click', function () {
@@ -81,3 +80,14 @@ for (let i = 0; i < headerLinks.length; i++) {
       .scrollIntoView({ behavior: 'smooth' })
   })
 }
+
+document
+  .querySelector('.header__burger')
+  .addEventListener('click', function () {
+    this.classList.toggle('header__burger_active')
+    document.querySelector('.header').classList.toggle('header__active')
+    console.log('hello')
+    document
+      .querySelector('.header__nav')
+      .classList.toggle('header__nav_active')
+  })
