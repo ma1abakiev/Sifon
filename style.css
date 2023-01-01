@@ -708,18 +708,20 @@ body {
   color: var(--primary-color);
 }
 
+
 @media all and (min-width:481px) and (max-width:768px) {
+  /* base styles */
     body{
       background: transparent;
-      overflow-x: hidden;
-    }
-    h1{
-      display: none;
+      /* overflow-x: hidden; */
     }
     .container{
       max-width: 480px;
       margin: 0 auto;
       padding: 0px 10px;
+    }
+    .phone{
+      display: none;
     }
     .button{
       padding: 5px 10px;
@@ -735,6 +737,8 @@ body {
       font-size: 18px;
       line-height: 32px;
     }
+
+    /* header */
     .header {
       height: auto;
     }
@@ -795,6 +799,26 @@ body {
     .header__link {
       font-size: 20px;
     }
+
+    /* intro */
+    .intro__title{
+      font-size: 60px;
+      line-height: 55px;
+    }
+    .intro__numbers{
+      flex-direction: column;
+    }
+    .intro__number{
+      margin: 5px 0px;
+    }
+
+    /* service */
+    .services__bg{
+      width: 255px;
+      height: 362px;
+    }
+
+    /* departure */
     .departure-img{
       height: 150px;
     }
@@ -806,6 +830,8 @@ body {
     .departure-content{
       justify-content: space-between;
     }
+
+    /* about-us */
     .about-title{
       font-size: 25px;
     }
@@ -813,12 +839,11 @@ body {
       font-size: 18px;
       line-height: 32px;
     }
-    .intro__numbers{
-      display: none;
-    }
+
+    /* equipment */
     .equipment-slider{
-      width: 300px;
-      height: 500px;
+      width: 400px;
+      height: 400px;
       padding: 20px;
     }
     .equipment-title{
@@ -829,28 +854,26 @@ body {
       width: 200px;
     }
     .equipment-info{
-      padding: 20px;
+      padding: 10px;
     }
     .equipment-text{
       font-size: 12px;
     }
     .feedback-left,
     .equipment-left {
-      left: 50px;
-      margin-top: 300px;
+      left: 20px;
+      margin-top: 150px;
     }
     .feedback-right,
     .equipment-right {
-      right: 50px;
-      margin-top: 300px;
+      right: 20px;
+      margin-top: 150px;
     }
-    .supfooter{
-      display: none;
-    }
+    /* jobs */
     .jobs-item > img {
       width: 100px;
       height: 100px;
-  }
+    }
     .jobs-wrapper{
       max-width: 320px;
       margin: 0 auto;
@@ -880,12 +903,17 @@ body {
       grid-row:2/3;
       grid-column:2/3;
     }
+    /* supfooter */
+    .supfooter{
+      display: none;
+    }
+    /* feedback */
     .feedback-slider{
-      width: 300px;
-      height: 600px;
+      width: 400px;
+      height: 370px;
     }
     .feedback-content{
-      padding: 15px 15px; 
+      padding: 5px 5px; 
     }
     .feedback-img {
       width: 57px;
@@ -894,15 +922,15 @@ body {
     }
     .feedback-text,
     .feedback-author {
-      max-width: 150px;
+      max-width: 250px;
       margin: 5px auto;
     
       font-size: 12px;
       line-height: 183.9%;
     }
     .feedback-box {
-      margin: 0px 0px 50px 0px;
-      padding: 20px;
+      margin:5px;
+      padding: 20px 50px;
     
       background: #ffffff;
       border: 1px solid #eff0f7;
@@ -916,7 +944,30 @@ body {
       height: 20px;
     }
 
+    /* footer */
+    .footer-content{
+      padding: 20px 0px;
+      height: auto;
+      flex-direction: column;
+      align-items: start;
+    }
+    .footer-social{
+      margin-top: 15px;
+    }
+    .footer-contact{
+      flex-direction: row;
+    }
+    .footer-btn{
+      display: none;
+    }
+    .footer-link{
+      cursor: pointer;
+    }
+    .social-box{
+      margin-top: 15px;
+    }
   }
+
 @media screen and (max-width: 480px) {
   .button {
     padding: 8px 10px;
