@@ -655,6 +655,16 @@ body {
 
   color: #9b9999;
 }
+.footer__link{
+  margin-top: 25px;
+}
+.footer__link:hover{
+  color: var(--primary-color);
+}
+.footer-nav{
+  display: flex;
+  flex-direction: column;
+}
 .footer-contact {
   display: flex;
   flex-direction: column;
@@ -665,7 +675,9 @@ body {
   font-size: 16px;
   line-height: 40px;
   letter-spacing: 0.03em;
+
   color: #f2f2f2;
+  
   display: flex;
   align-items: center;
 }
@@ -677,6 +689,7 @@ body {
   background: transparent;
   color: var(--primary-color);
   border: 2px solid #1cc8ee;
+  text-decoration: none;
   filter: drop-shadow(0px 4px 30px rgba(51, 51, 51, 0.1));
   backdrop-filter: blur(5px);
   /* Note: backdrop-filter has minimal browser support */
@@ -693,6 +706,266 @@ body {
 .footer-link:hover {
   color: var(--primary-color);
 }
+
+
+@media all and (min-width:481px) and (max-width:768px) {
+  /* base styles */
+    body{
+      background: transparent;
+      /* overflow-x: hidden; */
+    }
+    .container{
+      max-width: 480px;
+      margin: 0 auto;
+      padding: 0px 10px;
+    }
+    .phone{
+      display: none;
+    }
+    .button{
+      padding: 5px 10px;
+    }
+    .title{
+      text-align: center;
+      font-size: 38px;
+      line-height: 20px;
+    }
+    .subtitle{
+      margin-top: 5px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 32px;
+    }
+
+    /* header */
+    .header {
+      height: auto;
+    }
+    .header__active {
+      background: #0096b7;
+    }
+    .header__content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+  
+      height: auto;
+    }
+    .header__logo {
+      display: none;
+    }
+    .header__burger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+      margin: 10px 0;
+  
+      height: 20px;
+    }
+    .header__burger-item {
+      width: 35px;
+      height: 3px;
+      
+      background-color: #fff;
+      transition: .3s
+    }
+    .header__burger_active {
+      display: flex;
+  
+      height: 40px;
+    }
+    .header__burger_active > .header__burger-item:first-child {
+      transform: translateY(10px) rotate(45deg);
+    }
+    .header__burger_active > .header__burger-item:nth-child(2) {
+      display: none;
+    }
+    .header__burger_active > .header__burger-item:last-child {
+      transform: translateY(-26px) rotate(-45deg);
+    }
+    .header__nav {
+      display: none;
+  
+      height: 290px;
+    }
+    .header__nav_active {
+      display: flex;
+      flex-direction: column;
+  
+      margin-bottom: 30px;
+    }
+    .header__link {
+      font-size: 20px;
+    }
+
+    /* intro */
+    .intro__title{
+      font-size: 60px;
+      line-height: 55px;
+    }
+    .intro__numbers{
+      flex-direction: column;
+    }
+    .intro__number{
+      margin: 5px 0px;
+    }
+
+    /* service */
+    .services__bg{
+      width: 255px;
+      height: 362px;
+    }
+
+    /* departure */
+    .departure-img{
+      height: 150px;
+    }
+    .departure-text{
+      max-width: 150px;
+      font-size: 12px;
+      line-height: 22px;
+    }
+    .departure-content{
+      justify-content: space-between;
+    }
+
+    /* about-us */
+    .about-title{
+      font-size: 25px;
+    }
+    .about-text{
+      font-size: 18px;
+      line-height: 32px;
+    }
+
+    /* equipment */
+    .equipment-slider{
+      width: 400px;
+      height: 400px;
+      padding: 20px;
+    }
+    .equipment-title{
+      font-size: 22px;
+      line-height: 18px;
+    }
+    .equipment-img{
+      width: 200px;
+    }
+    .equipment-info{
+      padding: 10px;
+    }
+    .equipment-text{
+      font-size: 12px;
+    }
+    .feedback-left,
+    .equipment-left {
+      left: 20px;
+      margin-top: 150px;
+    }
+    .feedback-right,
+    .equipment-right {
+      right: 20px;
+      margin-top: 150px;
+    }
+    /* jobs */
+    .jobs-item > img {
+      width: 100px;
+      height: 100px;
+    }
+    .jobs-wrapper{
+      max-width: 320px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-rows: repeat(3, 100px);
+      grid-template-columns: repeat(2, 100px);
+      gap: 15px;
+    }
+    .jobs-item:first-child {
+      grid-row: 1/2;
+      grid-column: 1/2;
+  
+    }
+    .jobs-item:nth-child(2) {
+      grid-row: 1/2;
+      grid-column: 2/3;
+    }
+    .jobs-item:nth-child(3) {
+      grid-row: 1/2;
+      grid-column: 3/4;
+    }
+    .jobs-item:nth-child(4) {
+      grid-row: 2/3;
+      grid-column: 1/2;
+    }
+    .jobs-item:last-child {
+      grid-row:2/3;
+      grid-column:2/3;
+    }
+    /* supfooter */
+    .supfooter{
+      display: none;
+    }
+    /* feedback */
+    .feedback-slider{
+      width: 400px;
+      height: 370px;
+    }
+    .feedback-content{
+      padding: 5px 5px; 
+    }
+    .feedback-img {
+      width: 57px;
+      height: 57px;
+      border-radius: 50%;
+    }
+    .feedback-text,
+    .feedback-author {
+      max-width: 250px;
+      margin: 5px auto;
+    
+      font-size: 12px;
+      line-height: 183.9%;
+    }
+    .feedback-box {
+      margin:5px;
+      padding: 20px 50px;
+    
+      background: #ffffff;
+      border: 1px solid #eff0f7;
+      box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+      border-radius: 20px;
+    }
+    .feedback-rating{
+      max-width: 150px;
+    }
+    .rating__start{
+      height: 20px;
+    }
+
+    /* footer */
+    .footer-content{
+      padding: 20px 0px;
+      height: auto;
+      flex-direction: column;
+      align-items: start;
+    }
+    .footer-social{
+      margin-top: 15px;
+    }
+    .footer-contact{
+      flex-direction: row;
+    }
+    .footer-btn{
+      display: none;
+    }
+    .footer-link{
+      cursor: pointer;
+    }
+    .social-box{
+      margin-top: 15px;
+    }
+  }
 
 @media screen and (max-width: 480px) {
 
