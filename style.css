@@ -718,7 +718,8 @@ body {
     }
     .container{
       max-width: 480px;
-      padding: 0;
+      margin: 0 auto;
+      padding: 0px 10px;
     }
     .button{
       padding: 5px 10px;
@@ -734,8 +735,65 @@ body {
       font-size: 18px;
       line-height: 32px;
     }
-    .header{
+    .header {
+      height: auto;
+    }
+    .header__active {
+      background: #0096b7;
+    }
+    .header__content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+  
+      height: auto;
+    }
+    .header__logo {
       display: none;
+    }
+    .header__burger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+      margin: 10px 0;
+  
+      height: 20px;
+    }
+    .header__burger-item {
+      width: 35px;
+      height: 3px;
+      
+      background-color: #fff;
+      transition: .3s
+    }
+    .header__burger_active {
+      display: flex;
+  
+      height: 40px;
+    }
+    .header__burger_active > .header__burger-item:first-child {
+      transform: translateY(10px) rotate(45deg);
+    }
+    .header__burger_active > .header__burger-item:nth-child(2) {
+      display: none;
+    }
+    .header__burger_active > .header__burger-item:last-child {
+      transform: translateY(-26px) rotate(-45deg);
+    }
+    .header__nav {
+      display: none;
+  
+      height: 290px;
+    }
+    .header__nav_active {
+      display: flex;
+      flex-direction: column;
+  
+      margin-bottom: 30px;
+    }
+    .header__link {
+      font-size: 20px;
     }
     .departure-img{
       height: 150px;
@@ -776,11 +834,15 @@ body {
     .equipment-text{
       font-size: 12px;
     }
-    .equipment-left{
+    .feedback-left,
+    .equipment-left {
       left: 50px;
+      margin-top: 300px;
     }
-    .equipment-right{
+    .feedback-right,
+    .equipment-right {
       right: 50px;
+      margin-top: 300px;
     }
     .supfooter{
       display: none;
@@ -853,6 +915,8 @@ body {
     .rating__start{
       height: 20px;
     }
+
+  }
 @media screen and (max-width: 480px) {
   .button {
     padding: 8px 10px;
