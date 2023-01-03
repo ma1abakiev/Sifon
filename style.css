@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,900;0,1000;1,800&display=swap');
-@import url(./assets/styles/adaptive.css);
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito', 'Arial', sans-serif;
 }
 
 :root {
@@ -13,7 +14,6 @@
 }
 
 body {
-  /* background: url(./assets/image/body-bg.png); */
   background: linear-gradient(114.44deg, #624af2 0%, #50ddc3 100%);
 }
 
@@ -718,9 +718,6 @@ body {
     margin: 0 auto;
     padding: 0px 10px;
   }
-  .phone {
-    display: none;
-  }
   .button {
     padding: 5px 10px;
   }
@@ -811,9 +808,17 @@ body {
   }
 
   /* service */
-  .services__bg {
-    width: 255px;
-    height: 362px;
+  .services__items {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 450px);
+    gap: 40px 0;
+    padding: 0;
+  }
+  .services__box {
+    padding: 0;
+  }
+  .services__title {
+    font-size: 32px;
   }
 
   /* departure */
@@ -946,10 +951,10 @@ body {
     padding: 20px 0px;
     height: auto;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
   }
   .footer-social {
-    margin-top: 15px;
+    margin-top: 25px;
   }
   .footer-contact {
     flex-direction: row;
@@ -959,9 +964,13 @@ body {
   }
   .footer-link {
     cursor: pointer;
+    margin-left: 5px;
   }
   .social-box {
     margin-top: 15px;
+  }
+  .phone{
+    z-index: 0;
   }
 }
 
@@ -1329,6 +1338,7 @@ body {
   .services__title {
     font-size: 30px;
   }
+  
   /* Departure */
   .departure-img {
     height: 160px;
