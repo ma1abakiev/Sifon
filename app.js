@@ -1,6 +1,14 @@
-let zero = 0
+let zero = 0;
+const message = document.getElementById('message');
+const whatsapp = document.getElementById('whatsapp');
+const instagram = document.getElementById('instagram');
+const telegram = document.getElementById('telegram');
+const messageAll = document.getElementById('message-all');
+const messageClose = document.getElementById('message-close');
+const phone = document.querySelector('.tel');
+const tele = document.querySelector('.phone-tele');
 
-sliderActive(zero)
+sliderActive(zero);
 
 function sliderActive(i) {
   zero += i
@@ -20,7 +28,7 @@ function sliderActive(i) {
   dots[zero].className += ' active'
 }
 
-sliderEquipment(zero)
+sliderEquipment(zero);
 
 function sliderEquipment(i) {
   zero += i
@@ -40,13 +48,6 @@ function sliderEquipment(i) {
   dots[zero].className += ' active'
 }
 
-const message = document.getElementById('message')
-const whatsapp = document.getElementById('whatsapp')
-const instagram = document.getElementById('instagram')
-const telegram = document.getElementById('telegram')
-const messageAll = document.getElementById('message-all')
-const messageClose = document.getElementById('message-close')
-
 message.addEventListener('click', () => {
   whatsapp.classList.toggle('whatsapp-active')
   instagram.classList.toggle('instagram-active')
@@ -55,14 +56,14 @@ message.addEventListener('click', () => {
   messageAll.classList.toggle('message-all__active')
 })
 
-const phone = document.querySelector('.tel')
-const tele = document.querySelector('.phone-tele')
 
 phone.addEventListener('click', () => {
   tele.classList.toggle('phone-tele__active')
 })
 
+
 // Ma1abakiev code
+
 
 window.addEventListener('scroll', () => {
   let scrollPos = window.pageYOffset
@@ -80,6 +81,7 @@ for (let i = 0; i < headerLinks.length; i++) {
       .scrollIntoView({ behavior: 'smooth' })
   })
 }
+
 
 document
   .querySelector('.header__burger')
