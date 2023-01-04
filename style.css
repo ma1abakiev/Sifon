@@ -705,7 +705,9 @@ body {
   color: var(--primary-color);
 }
 
-
+.mobile__footer-content {
+  display: none;
+}
 @media all and (min-width:481px) and (max-width:768px) {
   /* base styles */
   body {
