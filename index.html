@@ -17,17 +17,18 @@
     <div class="container">
       <div class="header__content">
         <div class="header__burger">
-          <span class="header__burger-item"></span><span class="header__burger-item"></span><span
-            class="header__burger-item"></span>
+          <span class="header__burger-item"></span>
+          <span class="header__burger-item"></span>
+          <span class="header__burger-item"></span>
         </div>
-        <img src="./assets/image/Logo.svg" alt="" class="Sifon.kg" >
+        <img src="./assets/image/Logo.svg" alt="Sifon.kg logo" class="header__logo">
         <nav class="header__nav">
-          <span data-scroll="services" id="link" class="header__link">Наши услуги</span>
-          <span data-scroll="about-us" class="header__link">О нас</span>
-          <span data-scroll="equipment" class="header__link">Наше оборудование</span>
-          <span data-scroll="jobs" class="header__link">Наши работы</span>
-          <span data-scroll="feedback" class="header__link">Отзывы</span><span data-scroll="footer"
-            class="header__link">Контакты</span>
+          <a href="#services" id="link" class="header__link">Наши услуги</a>
+          <a href="#about-us" class="header__link">О нас</a>
+          <a href="#equipment" class="header__link">Наше оборудование</a>
+          <a href="#jobs" class="header__link">Наши работы</a>
+          <a href="#feedback" class="header__link">Отзывы</a>
+          <a href="#footer" class="header__link">Контакты</a>
         </nav>
       </div>
     </div>
@@ -40,16 +41,16 @@
       </h1>
       <div class="intro__numbers">
         <a href="tel:0999453335" class="button intro__number">
-          <img src="./assets/image/mega.svg" alt="Megacom"> 0999453335 
+          <img src="./assets/image/mega.svg" alt="Megacom logo"> 0999453335 
         </a>
-          <a href="tel:0705453335" class="button intro__number">
-          <img src="./assets/image/o!.png" alt="O!"> 0705453335
+        <a href="tel:0705453335" class="button intro__number">
+          <img src="./assets/image/o!.png" alt="O! logo"> 0705453335
         </a>
       </div>
-    </section>
+    </div>
+  </section>
     <section class="services" id="services">
       <div class="container">
-        
         <div class="services__content">
           <h3 class="title">Наши услуги</h3>
           <p class="subtitle">
@@ -61,14 +62,14 @@
                 <div class="services__bg services__bg1"></div>
                 <div class="services__box">
                   <h4 class="services__title">Очистка Канализаций</h4>
-                  <a href="tel: 0705453335" class="button">Заказать звонок</a>
+                  <a href="tel:0705453335" class="button">Заказать звонок</a>
                 </div>
               </div>
               <div class="services__item">
                 <div class="services__bg services__bg2"></div>
                 <div class="services__box">
                   <h4 class="services__title">Сантехнические работы</h4>
-                  <a href="tel: 0705453335" class="button">Заказать звонок</a>
+                  <a href="tel:0705453335" class="button">Заказать звонок</a>
                 </div>
               </div>
           </div>
@@ -76,20 +77,19 @@
         </div>
       </div>
     </section>
-
     <section class="departure" id="departure">
       <div class="container">
         <div class="departure-content">
           <img
             src="./assets/image/departureMaster.png"
-            alt=""
+            alt="departure"
             class="departure-img"
-          />
+          >
           <div class="departure-box">
-            <p class="departure-text">
+            <h6 class="departure-text">
               Вы можете вызвать мастера, он приедет и даст консультацию.
-            </p>
-            <a href="tel: 0705453335" class="button">Вызвать</a>
+            </h6>
+            <a href="tel:0705453335" class="button">Вызвать</a>
           </div>
         </div>
       </div>
@@ -121,25 +121,25 @@
       <div class="container">
         <h3 class="title">Наше оборудование</h3>
         <p class="subtitle">
-          Узнайте ооборудование и способы <br />
+          Узнайте ооборудование и способы <br>
           которые мы используем
         </p>
         <div class="equipment-content">
           <div class="equipment-contollers">
             <div class="equipment-left" onclick="sliderEquipment(-1)">
-              <img src="./assets/image/boldChevron.svg" alt="" />
+              <img src="./assets/image/chevron-left.png" alt="left">
             </div>
             <div class="equipment-right" onclick="sliderEquipment(1)">
-              <img src="./assets/image/boldChevron.svg" alt="" />
+              <img src="./assets/image/chevron-right.png" alt="right">
             </div>
           </div>
           <div class="equipment-slider">
             <div class="equipment-inner">
               <img
                 src="./assets/image/hydro-equipment.png"
-                alt="hydro"
+                alt="Гидродинамическая очистка"
                 class="equipment-img"
-              />
+              >
               <div class="equipment-info">
                 <p class="equipment-title">Гидродинамическая промывка</p>
                 <p class="equipment-text">
@@ -155,9 +155,9 @@
             <div class="equipment-inner">
               <img
                 src="./assets/image/equipment.png"
-                alt="hydro"
+                alt="Механическая очистка"
                 class="equipment-img"
-              />
+              >
               <div class="equipment-info">
                 <p class="equipment-title">Механическая прочистка</p>
                 <p class="equipment-text">
@@ -175,9 +175,9 @@
             <div class="equipment-inner">
               <img
                 src="./assets/image/chemistry-equipment.png"
-                alt="hydro"
+                alt="Химическая очистка"
                 class="equipment-img"
-              />
+              >
               <div class="equipment-info">
                 <p class="equipment-title">Химическая очистка</p>
                 <p class="equipment-text">
@@ -193,9 +193,9 @@
             <div class="equipment-inner">
               <img
                 src="./assets/image/tele-equipment.png"
-                alt="hydro"
+                alt="Телеинспекция труб"
                 class="equipment-img"
-              />
+              >
               <div class="equipment-info">
                 <p class="equipment-title">Телеинспекция труб</p>
                 <p class="equipment-text">
@@ -223,19 +223,19 @@
         <p class="subtitle">Примеры выполненных нами работ</p>
         <div class="jobs-wrapper">
           <div class="jobs-item">
-            <img src="./assets/image/jobs1.jpg" alt="our jobs" class="jobs__img" />
+            <img src="./assets/image/jobs1.jpg" alt="our jobs" class="jobs__img">
           </div>
           <div class="jobs-item">
-            <img src="./assets/image/jobs2.jpg" alt="our jobs" class="jobs__img" />
+            <img src="./assets/image/jobs2.jpg" alt="our jobs" class="jobs__img">
           </div>
           <div class="jobs-item">
-            <img src="./assets/image/jobs3.jpg" alt="our jobs" class="jobs__img"/>
+            <img src="./assets/image/jobs3.jpg" alt="our jobs" class="jobs__img">
           </div>
           <div class="jobs-item">
-            <img src="./assets/image/jobs4.jpg" alt="our jobs" class="jobs__img"/>
+            <img src="./assets/image/jobs4.jpg" alt="our jobs" class="jobs__img">
           </div>
           <div class="jobs-item">
-            <img src="./assets/image/jobs5.jpg" alt="our jobs" class="jobs__img" />
+            <img src="./assets/image/jobs5.jpg" alt="our jobs" class="jobs__img">
           </div>
         </div>
       </div>
@@ -244,19 +244,18 @@
       <div class="container">
         <h3 class="title">Отзывы</h3>
         <p class="subtitle">
-          Узнайте почему клиенты <br />
+          Узнайте почему клиенты <br>
           нам доверяют
         </p>
         <div class="feedback-wrapper">
           <div class="feedback-contollers">
             <div class="feedback-left" onclick="sliderActive(-1)">
-              <img src="./assets/image/chevron.svg" alt="left" />
+              <img src="./assets/image/chevron-left.png" alt="left">
             </div>
             <div class="feedback-right" onclick="sliderActive(1)">
-              <img src="./assets/image/chevron.svg" alt="right" />
+              <img src="./assets/image/chevron-right.png" alt="right">
             </div>
           </div>
-        </div>
         <div class="feedback-slider first-feedback">
           <div class="feedback-content">
             <div class="feedback-img">
@@ -350,6 +349,7 @@
               <img src="./assets/image/star.svg" alt="star" class="rating__start">
             </div>
           </div>
+        </div>
           <div class="dots feedback-dots">
             <div class="dot feedback-dot"></div>
             <div class="dot feedback-dot"></div>
@@ -361,46 +361,46 @@
     </section>
     <div class="messanger">
       <div class="whatsapp" id="whatsapp">
-        <img src="./assets/image/whatsapp.svg" alt="" />
+        <img src="./assets/image/whatsapp.svg" alt="whatsapp">
       </div>
       <div class="instagram" id="instagram">
-        <img src="./assets/image/instagram.svg" alt="" />
+        <img src="./assets/image/instagram.svg" alt="instagram">
       </div>
       <div class="telegram" id="telegram">
-        <img src="./assets/image/telegram.svg" alt="" />
+        <img src="./assets/image/telegram.svg" alt="telegram">
       </div>
       <div class="message" id="message">
         <img
           src="./assets/image/helpIcon.svg"
           class="message-all"
           id="message-all"
-          alt=""
-        />
+          alt="helpOpen"
+        >
         <img
           src="./assets/image/closeIcon.svg"
           id="message-close"
           class="message-close"
-          alt=""
-        />
+          alt="helpClose"
+        >
       </div>
     </div>
     <div class="phone">
       <div class="phone-tele">
-        <a  href="tel:0705453335" class="phone-btn oshka">
+        <a href="tel:0705453335" class="phone-btn oshka">
           Позвонить
-          <img src="./assets/image/o!.png" alt="" />
+          <img src="./assets/image/o!.png" alt="o!">
         </a>
-        <a href="tel: 0999453335" class="phone-btn mega">
+        <a href="tel:0999453335" class="phone-btn mega">
           Позвонить
-          <img src="./assets/image/mega.svg" alt="" />
+          <img src="./assets/image/mega.svg" alt="megacom">
         </a>
       </div>
-      <img src="./assets/image/phone.svg" alt="" class="tel" />
+      <img src="./assets/image/phone.svg" alt="call" class="tel">
     </div>
     <div class="supfooter">
       <div class="supfooter-content">
         <p class="supfooter-question">
-          Нужна <br />
+          Нужна <br>
           консультация?
         </p>
         <p class="supfooter-text">
@@ -410,10 +410,9 @@
         <a href="tel:0705453335" class="button">Связаться с нами</a>
       </div>
       <div class="horn">
-        <img src="./assets/image/horn.svg" alt="horn" />
+        <img src="./assets/image/horn.svg" alt="horn">
       </div>
     </div>
-  </div>
   <footer class="footer" id="footer">
     <div class="container">
       <div class="footer-content">
@@ -435,25 +434,25 @@
           <p class="footer-copy">© Copyright by FS-20 2022</p>
         </div>
         <nav class="footer-nav">
-          <span data-scroll="services" class="header__link footer__link">Наши услуги</span><span
-            data-scroll="jobs" class="header__link footer__link">Наши работы</span><span data-scroll="equipment"
-            class="header__link footer__link">Наше оборудование</span><span data-scroll="feedback"
-            class="header__link footer__link">Отзывы</span>
+          <a href="#services" class="header__link footer__link">Наши услуги</a>
+          <a href="#jobs" class="header__link footer__link">Наши работы</a>
+          <a href="#equipment" class="header__link footer__link">Наше оборудование</a>
+          <a href="#feedback" class="header__link footer__link">Отзывы</a>
         </nav>
         <nav class="footer-social">
-          <a href="#about-us" class="header__link">О нас</a>
+          <a href="#about-us" class="header__link footer__link">О нас</a>
           <div class="social-box">
-            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none">
               <path
                 d="M8 1.5C4.41624 1.5 1.5 4.41624 1.5 8V17C1.5 20.5838 4.41624 23.5 8 23.5H17C20.5838 23.5 23.5 20.5838 23.5 17V8C23.5 4.41624 20.5838 1.5 17 1.5H8ZM8 2.5H17C20.0432 2.5 22.5 4.95676 22.5 8V17C22.5 20.0432 20.0432 22.5 17 22.5H8C4.95676 22.5 2.5 20.0432 2.5 17V8C2.5 4.95676 4.95676 2.5 8 2.5ZM18.5 5.5C17.9477 5.5 17.5 5.94771 17.5 6.5C17.5 7.05229 17.9477 7.5 18.5 7.5C19.0523 7.5 19.5 7.05229 19.5 6.5C19.5 5.94771 19.0523 5.5 18.5 5.5ZM12.5 7C9.46836 7 7 9.46836 7 12.5C7 15.5316 9.46836 18 12.5 18C15.5316 18 18 15.5316 18 12.5C18 9.46836 15.5316 7 12.5 7ZM12.5 8C14.9912 8 17 10.0088 17 12.5C17 14.9912 14.9912 17 12.5 17C10.0088 17 8 14.9912 8 12.5C8 10.0088 10.0088 8 12.5 8Z"
                 fill="#FFFBFB" />
             </svg>
-            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none">
               <path
                 d="M12.5 2.5C6.9775 2.5 2.5 6.9775 2.5 12.5C2.5 14.376 3.02695 16.1251 3.92578 17.6253L2.58952 22.5L7.56836 21.193C9.02446 22.0209 10.7054 22.5 12.5 22.5C18.0225 22.5 22.5 18.0225 22.5 12.5C22.5 6.9775 18.0225 2.5 12.5 2.5ZM9.07715 7.83528C9.23965 7.83528 9.40662 7.83429 9.55078 7.84179C9.72912 7.84596 9.92322 7.85902 10.109 8.26985C10.3299 8.75818 10.8107 9.98325 10.8724 10.1074C10.9341 10.2316 10.9778 10.3779 10.8919 10.5404C10.8103 10.707 10.7678 10.8079 10.6478 10.9554C10.5236 11.0987 10.3876 11.2768 10.2751 11.3851C10.1509 11.5093 10.0227 11.6454 10.166 11.8929C10.3093 12.1404 10.8071 12.9518 11.543 13.6068C12.4888 14.4518 13.2868 14.7114 13.5352 14.8356C13.7835 14.9598 13.9273 14.9404 14.0706 14.7738C14.2181 14.6113 14.6901 14.0537 14.8568 13.8053C15.0193 13.557 15.1852 13.6 15.4102 13.6816C15.6385 13.7633 16.8562 14.3631 17.1045 14.4873C17.3528 14.6115 17.5156 14.6729 17.5781 14.7738C17.6423 14.8779 17.6424 15.3738 17.4365 15.9521C17.2307 16.5296 16.2199 17.0881 15.7666 17.1273C15.3091 17.1698 14.8821 17.3329 12.793 16.5104C10.273 15.5179 8.68373 12.9369 8.55957 12.7702C8.4354 12.6077 7.55045 11.4283 7.55045 10.2116C7.55045 8.99077 8.19054 8.39287 8.41471 8.14454C8.64304 7.89621 8.91047 7.8353 9.07714 7.8353L9.07715 7.83528Z"
                 fill="white" />
             </svg>
-            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none">
               <path
                 d="M20.9619 3.32042C20.691 3.33237 20.4386 3.41127 20.2165 3.50108C20.0083 3.5848 19.2131 3.92587 17.9606 4.463C16.707 5.0006 15.0471 5.71326 13.2764 6.47471C9.73497 7.99763 5.75351 9.71191 3.71419 10.5893C3.63751 10.6223 3.36993 10.7078 3.08593 10.9295C2.80193 11.1512 2.5 11.6106 2.5 12.1225C2.5 12.5353 2.69672 12.9454 2.94433 13.1902C3.19195 13.435 3.45395 13.556 3.67838 13.6476C4.49269 13.9798 7.0182 15.0133 7.49512 15.2084C7.66296 15.7226 8.57707 18.5189 8.78906 19.2042C8.9288 19.6564 9.06182 19.9397 9.23502 20.1645C9.32162 20.2769 9.42228 20.3754 9.54426 20.4526C9.59302 20.4834 9.64648 20.5072 9.70051 20.5291L9.70377 20.5307C9.71622 20.5357 9.72696 20.5442 9.73958 20.5486C9.7634 20.5569 9.77933 20.5579 9.8112 20.5649C9.93813 20.6059 10.0663 20.6316 10.1807 20.6316C10.6683 20.6316 10.9668 20.363 10.9668 20.363L10.9847 20.35L13.4928 18.1804L16.5348 21.058C16.5777 21.1186 16.9771 21.6668 17.8581 21.6668C18.3812 21.6668 18.7961 21.4043 19.0625 21.1248C19.3289 20.8452 19.4949 20.5516 19.5654 20.1824V20.1808C19.6314 19.8319 22.4349 5.43956 22.4349 5.43956L22.43 5.45909C22.5121 5.0845 22.5336 4.73564 22.443 4.39138C22.3525 4.04712 22.1139 3.71752 21.818 3.54015C21.5222 3.36282 21.2328 3.30847 20.9619 3.32042L20.9619 3.32042ZM20.8057 5.06195C20.8017 5.08627 20.8086 5.07404 20.8024 5.10264L20.8008 5.11241L20.7991 5.12217C20.7991 5.12217 18.0304 19.3304 17.9281 19.8715C17.9355 19.8307 17.9013 19.9119 17.8662 19.961C17.8166 19.9268 17.7148 19.8829 17.7148 19.8829L17.6986 19.865L13.5433 15.9343L10.6055 18.4734L11.4795 14.9741C11.4795 14.9741 16.943 9.31853 17.2721 8.98936C17.5371 8.72603 17.5928 8.63423 17.5928 8.5434C17.5928 8.42173 17.5294 8.33344 17.3877 8.33344C17.2602 8.33344 17.0887 8.4574 16.9971 8.51573C15.8028 9.27701 10.5599 12.3327 8.20964 13.6996C7.83615 13.5468 5.24139 12.4847 4.36198 12.1258C4.36864 12.1228 4.36645 12.1239 4.37337 12.1209C6.41322 11.2433 10.393 9.52899 13.9339 8.00629C15.7044 7.24494 17.3656 6.53174 18.6182 5.99457C19.8515 5.46568 20.7084 5.10168 20.8057 5.06196L20.8057 5.06195Z"
                 fill="white" />
@@ -473,7 +472,7 @@
         </div>
       </div>
     </div>
-  </footer>
+  </footer>  
   <script src="./app.js"></script>
 </body>
 </html>
