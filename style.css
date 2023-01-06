@@ -667,6 +667,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .footer-link {
   text-decoration: none;
   font-weight: 500;
@@ -678,6 +679,9 @@ body {
   
   display: flex;
   align-items: center;
+}
+.social-box {
+  margin-top: 25px;
 }
 .social-box > svg {
   cursor: pointer;
@@ -1014,7 +1018,6 @@ body {
   .footer-social {
     margin-top: 15px;
   }
-
   .footer-contact {
     flex-direction: row;
   }
