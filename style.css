@@ -1,11 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,900;0,1000;1,800&display=swap');
-
-
+@import url(./assets/styles/adaptive.css);
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Nunito', 'Arial', sans-serif;
+  font-family: 'Nunito', sans-serif;
 }
 
 :root {
@@ -14,6 +13,7 @@
 }
 
 body {
+  /* background: url(./assets/image/body-bg.png); */
   background: linear-gradient(114.44deg, #624af2 0%, #50ddc3 100%);
 }
 
@@ -180,8 +180,6 @@ body {
 /* Services */
 
 .services__content {
-  margin-top: 30px;
-
   padding-bottom: 150px;
 }
 .services > .container > .subtitle {
@@ -623,7 +621,7 @@ body {
   color: #ffffff;
 }
 .supfooter-text {
-  margin-left: 80px;
+  margin-left: 40px;
 
   max-width: 475px;
   font-size: 16px;
@@ -632,8 +630,8 @@ body {
 }
 .horn {
   position: absolute;
-  left: -10px;
-  top: 8px;
+  left: 0;
+  top: 10px;
 }
 .footer {
   background-color: #000;
@@ -655,13 +653,13 @@ body {
 
   color: #9b9999;
 }
-.footer__link {
+.footer__link{
   margin-top: 25px;
 }
-.footer__link:hover {
+.footer__link:hover{
   color: var(--primary-color);
 }
-.footer-nav {
+.footer-nav{
   display: flex;
   flex-direction: column;
 }
@@ -677,7 +675,7 @@ body {
   letter-spacing: 0.03em;
 
   color: #f2f2f2;
-
+  
   display: flex;
   align-items: center;
 }
@@ -707,7 +705,8 @@ body {
   color: var(--primary-color);
 }
 
-@media all and (min-width: 481px) and (max-width: 768px) {
+
+@media all and (min-width:481px) and (max-width:768px) {
   /* base styles */
   body {
     background: transparent;
@@ -717,6 +716,9 @@ body {
     max-width: 480px;
     margin: 0 auto;
     padding: 0px 10px;
+  }
+  .phone {
+    display: none;
   }
   .button {
     padding: 5px 10px;
@@ -733,228 +735,221 @@ body {
     line-height: 32px;
   }
 
-  /* header */
-  .header {
-    height: auto;
-  }
-  .header__active {
-    background: #0096b7;
-  }
-  .header__content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    /* header */
+    .header {
+      height: auto;
+    }
+    .header__active {
+      background: #0096b7;
+    }
+    .header__content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+  
+      height: auto;
+    }
+    .header__logo {
+      display: none;
+    }
+    .header__burger {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  
+      margin: 10px 0;
+  
+      height: 20px;
+    }
+    .header__burger-item {
+      width: 35px;
+      height: 3px;
+      
+      background-color: #fff;
+      transition: .3s
+    }
+    .header__burger_active {
+      display: flex;
+  
+      height: 40px;
+    }
+    .header__burger_active > .header__burger-item:first-child {
+      transform: translateY(10px) rotate(45deg);
+    }
+    .header__burger_active > .header__burger-item:nth-child(2) {
+      display: none;
+    }
+    .header__burger_active > .header__burger-item:last-child {
+      transform: translateY(-26px) rotate(-45deg);
+    }
+    .header__nav {
+      display: none;
+  
+      height: 290px;
+    }
+    .header__nav_active {
+      display: flex;
+      flex-direction: column;
+  
+      margin-bottom: 30px;
+    }
+    .header__link {
+      font-size: 20px;
+    }
 
-    height: auto;
-  }
-  .header__logo {
-    display: none;
-  }
-  .header__burger {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    margin: 10px 0;
-
-    height: 20px;
-  }
-  .header__burger-item {
-    width: 35px;
-    height: 3px;
-
-    background-color: #fff;
-    transition: 0.3s;
-  }
-  .header__burger_active {
-    display: flex;
-
-    height: 40px;
-  }
-  .header__burger_active > .header__burger-item:first-child {
-    transform: translateY(10px) rotate(45deg);
-  }
-  .header__burger_active > .header__burger-item:nth-child(2) {
-    display: none;
-  }
-  .header__burger_active > .header__burger-item:last-child {
-    transform: translateY(-26px) rotate(-45deg);
-  }
-  .header__nav {
-    display: none;
-
-    height: 290px;
-  }
-  .header__nav_active {
-    display: flex;
-    flex-direction: column;
-
-    margin-bottom: 30px;
-  }
-  .header__link {
-    font-size: 20px;
-  }
-
-  /* intro */
-  .intro__title {
-    font-size: 60px;
-    line-height: 55px;
-  }
-  .intro__numbers {
-    flex-direction: column;
-  }
-  .intro__number {
-    margin: 5px 0px;
-  }
+    /* intro */
+    .intro__title{
+      font-size: 60px;
+      line-height: 55px;
+    }
+    .intro__numbers{
+      flex-direction: column;
+    }
+    .intro__number{
+      margin: 5px 0px;
+    }
 
   /* service */
-  .services__items {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 450px);
-    gap: 40px 0;
-    padding: 0;
-  }
-  .services__box {
-    padding: 0;
-  }
-  .services__title {
-    font-size: 32px;
+  .services__bg {
+    width: 255px;
+    height: 362px;
   }
 
-  /* departure */
-  .departure-img {
-    height: 150px;
-  }
-  .departure-text {
-    max-width: 150px;
-    font-size: 12px;
-    line-height: 22px;
-  }
-  .departure-content {
-    justify-content: space-between;
-  }
+    /* departure */
+    .departure-img{
+      height: 150px;
+    }
+    .departure-text{
+      max-width: 150px;
+      font-size: 12px;
+      line-height: 22px;
+    }
+    .departure-content{
+      justify-content: space-between;
+    }
 
-  /* about-us */
-  .about-title {
-    font-size: 25px;
-  }
-  .about-text {
-    font-size: 18px;
-    line-height: 32px;
-  }
+    /* about-us */
+    .about-title{
+      font-size: 25px;
+    }
+    .about-text{
+      font-size: 18px;
+      line-height: 32px;
+    }
 
-  /* equipment */
-  .equipment-slider {
-    width: 400px;
-    height: 400px;
-    padding: 20px;
-  }
-  .equipment-title {
-    font-size: 22px;
-    line-height: 18px;
-  }
-  .equipment-img {
-    width: 200px;
-  }
-  .equipment-info {
-    padding: 10px;
-  }
-  .equipment-text {
-    font-size: 12px;
-  }
-  .feedback-left,
-  .equipment-left {
-    left: 20px;
-    margin-top: 150px;
-  }
-  .feedback-right,
-  .equipment-right {
-    right: 20px;
-    margin-top: 150px;
-  }
-  /* jobs */
-  .jobs-item > img {
-    width: 100px;
-    height: 100px;
-  }
-  .jobs-wrapper {
-    max-width: 320px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-rows: repeat(3, 100px);
-    grid-template-columns: repeat(2, 100px);
-    gap: 15px;
-  }
-  .jobs-item:first-child {
-    grid-row: 1/2;
-    grid-column: 1/2;
-  }
-  .jobs-item:nth-child(2) {
-    grid-row: 1/2;
-    grid-column: 2/3;
-  }
-  .jobs-item:nth-child(3) {
-    grid-row: 1/2;
-    grid-column: 3/4;
-  }
-  .jobs-item:nth-child(4) {
-    grid-row: 2/3;
-    grid-column: 1/2;
-  }
-  .jobs-item:last-child {
-    grid-row: 2/3;
-    grid-column: 2/3;
-  }
-  /* supfooter */
-  .supfooter {
-    display: none;
-  }
-  /* feedback */
-  .feedback-slider {
-    width: 400px;
-    height: 370px;
-  }
-  .feedback-content {
-    padding: 5px 5px;
-  }
-  .feedback-img {
-    width: 57px;
-    height: 57px;
-    border-radius: 50%;
-  }
-  .feedback-text,
-  .feedback-author {
-    max-width: 250px;
-    margin: 5px auto;
-
-    font-size: 12px;
-    line-height: 183.9%;
-  }
-  .feedback-box {
-    margin: 5px;
-    padding: 20px 50px;
-
-    background: #ffffff;
-    border: 1px solid #eff0f7;
-    box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
-    border-radius: 20px;
-  }
-  .feedback-rating {
-    max-width: 150px;
-  }
-  .rating__start {
-    height: 20px;
-  }
+    /* equipment */
+    .equipment-slider{
+      width: 400px;
+      height: 400px;
+      padding: 20px;
+    }
+    .equipment-title{
+      font-size: 22px;
+      line-height: 18px;
+    }
+    .equipment-img{
+      width: 200px;
+    }
+    .equipment-info{
+      padding: 10px;
+    }
+    .equipment-text{
+      font-size: 12px;
+    }
+    .feedback-left,
+    .equipment-left {
+      left: 20px;
+      margin-top: 150px;
+    }
+    .feedback-right,
+    .equipment-right {
+      right: 20px;
+      margin-top: 150px;
+    }
+    /* jobs */
+    .jobs-item > img {
+      width: 100px;
+      height: 100px;
+    }
+    .jobs-wrapper{
+      max-width: 320px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-rows: repeat(3, 100px);
+      grid-template-columns: repeat(2, 100px);
+      gap: 15px;
+    }
+    .jobs-item:first-child {
+      grid-row: 1/2;
+      grid-column: 1/2;
+  
+    }
+    .jobs-item:nth-child(2) {
+      grid-row: 1/2;
+      grid-column: 2/3;
+    }
+    .jobs-item:nth-child(3) {
+      grid-row: 1/2;
+      grid-column: 3/4;
+    }
+    .jobs-item:nth-child(4) {
+      grid-row: 2/3;
+      grid-column: 1/2;
+    }
+    .jobs-item:last-child {
+      grid-row:2/3;
+      grid-column:2/3;
+    }
+    /* supfooter */
+    .supfooter{
+      display: none;
+    }
+    /* feedback */
+    .feedback-slider{
+      width: 400px;
+      height: 370px;
+    }
+    .feedback-content{
+      padding: 5px 5px; 
+    }
+    .feedback-img {
+      width: 57px;
+      height: 57px;
+      border-radius: 50%;
+    }
+    .feedback-text,
+    .feedback-author {
+      max-width: 250px;
+      margin: 5px auto;
+    
+      font-size: 12px;
+      line-height: 183.9%;
+    }
+    .feedback-box {
+      margin:5px;
+      padding: 20px 50px;
+    
+      background: #ffffff;
+      border: 1px solid #eff0f7;
+      box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
+      border-radius: 20px;
+    }
+    .feedback-rating{
+      max-width: 150px;
+    }
+    .rating__start{
+      height: 20px;
+    }
 
   /* footer */
   .footer-content {
     padding: 20px 0px;
     height: auto;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
   }
   .footer-social {
-    margin-top: 25px;
+    margin-top: 15px;
   }
   .footer-contact {
     flex-direction: row;
@@ -964,18 +959,16 @@ body {
   }
   .footer-link {
     cursor: pointer;
-    margin-left: 5px;
   }
   .social-box {
     margin-top: 15px;
   }
-  .phone{
-    z-index: 0;
-  }
 }
 
 @media screen and (max-width: 480px) {
+
   .title {
+
     text-align: center;
   }
   .subtitle {
@@ -1014,9 +1007,9 @@ body {
   .header__burger-item {
     width: 35px;
     height: 3px;
-
+    
     background-color: #fff;
-    transition: 0.3s;
+    transition: .3s
   }
   .header__burger_active {
     display: flex;
@@ -1049,6 +1042,7 @@ body {
   /* .header__link::after {
     display: flex;
   } */
+  
 
   /* Intro */
   .intro__title {
@@ -1112,7 +1106,7 @@ body {
   }
 
   /* About-us */
-
+  
   .about-box {
     margin-top: 20px;
   }
@@ -1133,13 +1127,14 @@ body {
     margin-top: 20px;
 
     position: relative;
-    order: 2;
+    order: 2; 
   }
   .equipment-left {
     top: 10px;
     left: -120px;
 
     margin-top: 0;
+
   }
   .equipment-right {
     right: -120px;
@@ -1192,12 +1187,10 @@ body {
   .jobs-item:nth-child(3) {
     grid-row: auto;
     grid-column: auto;
-  }
-  .jobs-item:nth-child(4) {
+  }.jobs-item:nth-child(4) {
     grid-row: auto;
     grid-column: auto;
-  }
-  .jobs-item:last-child {
+  }.jobs-item:last-child {
     grid-row: auto;
     grid-column: auto;
   }
@@ -1253,6 +1246,7 @@ body {
   .supfooter {
     display: flex;
     flex-direction: column;
+
   }
   .supfooter-content {
     margin-bottom: 30px;
@@ -1269,6 +1263,7 @@ body {
     text-align: center;
     font-size: 35px;
     line-height: normal;
+
   }
   .supfooter-text {
     margin-left: 0;
@@ -1278,6 +1273,7 @@ body {
   .horn {
     top: -135px;
     left: -50px;
+    
   }
   /* Footer */
   .footer {
@@ -1288,10 +1284,10 @@ body {
     height: 550px;
     align-items: center;
   }
-  .footer-item {
+  .footer-item  {
     display: flex;
     justify-content: center;
-  }
+  } 
   .footer-social {
     display: flex;
     flex-direction: column;
@@ -1305,7 +1301,6 @@ body {
   .mobile__footer-content {
     display: none;
   }
-
 }
 /*  */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
@@ -1338,7 +1333,6 @@ body {
   .services__title {
     font-size: 30px;
   }
-  
   /* Departure */
   .departure-img {
     height: 160px;
