@@ -13,8 +13,8 @@
 }
 
 body {
-  /* background: url(./assets/image/body-bg.png); */
-  background: linear-gradient(114.44deg, #624af2 0%, #50ddc3 100%);
+  background: url(./assets/image/body-bg2.jpg);
+  /* background: linear-gradient(114.44deg, #624af2 0%, #50ddc3 100%); */
 }
 
 .container {
