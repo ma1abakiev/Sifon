@@ -14,7 +14,7 @@
 
 body {
   background: url(./assets/image/body-bg2.jpg);
-  /* background: linear-gradient(114.44deg, #624af2 0%, #50ddc3 100%); */
+  overflow-x: hidden;
 }
 
 .container {
@@ -266,7 +266,7 @@ body {
 
 /* About */
 
-.about-box,.feedback-wrapper{
+.about-box{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -340,27 +340,44 @@ body {
 }
 
 /* equipment */
+
+.equipment-content{
+  display: inline-flex;
+  overflow: hidden;
+  transform: translateX(0);
+  transition: all 0.3s ease-out;
+  cursor: grab;
+}
 .equipment-slider {
-  padding: 160px 50px 50px 50px;
-
-  width: 908px;
-  height: 830px;
-
-  background: #ffffff;
-  box-shadow: 0px 54px 54px rgba(74, 58, 255, 0.02),
-    1px 4px 104px rgba(20, 20, 43, 0.04), 0px 98px 66px rgba(19, 18, 66, 0.02);
-  border-radius: 34px;
+  max-height: 100vh;
+  width: 1350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
 }
 
+
 .equipment-inner {
+  max-width: 800px;
+  height: auto;
+
+  border: 3px solid #9b9999;
+  border-radius: 15px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.grabbing .equipment-inner{
+  transform: scale(0.9);
+}
+
 .equipment-info {
-  margin-top: 115px;
-  padding: 30px 60px;
+  margin-top: 70px;
+  padding: 10px 30px;
 
   text-align: center;
 
@@ -369,61 +386,72 @@ body {
   box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
   border-radius: 20px;
 }
-
+.equipment-img{
+  width: 250px;
+}
 .equipment-title {
   font-weight: 700;
   font-size: 32px;
   line-height: 61px;
 }
-.equipment-contollers,.feedback-contollers{
-  display: flex;
-  align-items: center;
-}
 .equipment-text {
   font-size: 24px;
 }
-.equipment-left,.equipment-right{
-  cursor: pointer;
-  position: relative;
-  top: 450px;
-}
-.equipment-left{
-  right: 460px;
-}
-.equipment-right{
-  left: 460px;
-}
+
 /* Feedback */
 
+.feedback-wrapper {
+  display: inline-flex;
+  overflow: hidden;
+  transform: translateX(0);
+  transition: all 0.3s ease-out;
+  cursor: grab;
+}
+
 .feedback-slider {
+  max-height: 100vh;
+  width: 1350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.grabbing {
+  cursor: grabbing;
+}
+
+.grabbing .feedback-content{
+  transform: scale(0.9);
+}
+
+  
+.feedback-content {
   width: 560px;
-  height: 800px;
-
-  display: none;
-
+  height: 600px;
+  
+  border:3px solid rgb(116, 116, 116);
   background: #ffffff;
   box-shadow: 0px 54px 54px rgba(74, 58, 255, 0.02),
     1px 4px 104px rgba(20, 20, 43, 0.04), 0px 98px 66px rgba(19, 18, 66, 0.02);
-  border-radius: 34px;
-}
 
-.feedback-content,
-.equipment-content {
+  border-radius: 34px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  padding: 30px 48px;
+  padding: 20px 28px;
 }
 
 .feedback-img {
-  width: 217px;
-  height: 217px;
+  width: 117px;
+  height: 117px;
   border-radius: 50%;
 }
 
 .feedback-box {
-  margin: 31px 0px 50px 0px;
+  margin: 31px 0px 20px 0px;
   padding: 20px;
 
   background: #ffffff;
@@ -437,7 +465,7 @@ body {
   max-width: 400px;
   margin: 10px auto;
 
-  font-size: 20px;
+  font-size: 18px;
   line-height: 183.9%;
   color: #000000;
 }
@@ -446,41 +474,7 @@ body {
   text-align: right;
 }
 
-.feedback-dots {
-  margin-bottom: 190px;
-}
 
-
-
-.feedback-right,
-.feedback-left {
-  cursor: pointer;
-  position: relative;
-  top: 400px;
-}
-.feedback-right{
-  left: 400px;
-}
-.feedback-left{
-  right: 400px;
-}
-
-.dots {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-
-/* Dot */
-.dot {
-  width: 15px;
-  height: 15px;
-
-  background-color: #bbb;
-  border-radius: 50%;
-  margin: 0 2px;
-  transition: background-color 0.6s ease;
-}
 
 .active {
   background: #0096b7;
@@ -694,7 +688,6 @@ body {
   text-decoration: none;
   filter: drop-shadow(0px 4px 30px rgba(51, 51, 51, 0.1));
   backdrop-filter: blur(5px);
-  /* Note: backdrop-filter has minimal browser support */
 
   border-radius: 5px;
 
@@ -997,15 +990,7 @@ body {
     height: 20px;
   }
 
-  .feedback-left {
-    top: 500px;
-    right: 100px;
-  }
 
-  .feedback-right {
-    top: 500px;
-    left: 100px;
-  }
 
 
   /* footer */
