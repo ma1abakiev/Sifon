@@ -341,27 +341,12 @@ body {
 
 /* equipment */
 
-.equipment-content{
-  display: inline-flex;
-  overflow: hidden;
-  transform: translateX(0);
-  transition: all 0.3s ease-out;
-  cursor: grab;
-}
-.equipment-slider {
-  max-height: 100vh;
-  width: 1350px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-}
+
 
 
 .equipment-inner {
   max-width: 800px;
-  height: auto;
+  height: 640px;
 
   border: 3px solid #9b9999;
   border-radius: 15px;
@@ -371,9 +356,7 @@ body {
   align-items: center;
 }
 
-.grabbing .equipment-inner{
-  transform: scale(0.9);
-}
+
 
 .equipment-info {
   margin-top: 70px;
@@ -400,33 +383,11 @@ body {
 
 /* Feedback */
 
-.feedback-wrapper {
-  display: inline-flex;
-  overflow: hidden;
-  transform: translateX(0);
-  transition: all 0.3s ease-out;
-  cursor: grab;
-}
+  .swiper{
+    padding: 40px 0px;
+  }
 
-.feedback-slider {
-  max-height: 100vh;
-  width: 1350px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-}
 
-.grabbing {
-  cursor: grabbing;
-}
-
-.grabbing .feedback-content{
-  transform: scale(0.9);
-}
-
-  
 .feedback-content {
   width: 560px;
   height: 600px;
@@ -1165,21 +1126,19 @@ body {
   }
 
 
-  /* Equipment */
-  .equipment-content {
-    position: relative;
-    padding: 0;
+
+  .equipment-inner{
+    height: 550px;
+    padding: 10px;
   }
   .equipment > .container > .title {
     font-size: 40px;
   }
-
-  .equipment-slider {
-    padding: 0;
-    width: auto;
-    height: auto;
-    order: 1;
+  .equipment-title{
+    line-height: 32px;
   }
+
+
   .equipment-img {
     margin-top: 30px;
     max-width: 80%;
@@ -1231,18 +1190,14 @@ body {
   
   .feedback-wrapper {
     position: relative;
-
-    padding-bottom: 320px;
-
   }
-  .feedback-content {
-    margin-top: 30px;
-    padding: 0;
-    padding-bottom: 10px;
+  .feedback-img{
+    width: 85px;
   }
-  .feedback-slider {
-    height: auto;
-    width: auto;
+  .feedback-content{
+    width: 320px;
+    height: 500px;
+    padding: 10px;
   }
   .feedback-box {
     border: none;
@@ -1252,7 +1207,10 @@ body {
   .feedback-text {
     line-height: normal;
   }
-
+  .feedback-box{
+    padding: 0;
+    margin: 0;
+  }
   /* Supfooter */
   .supfooter {
     padding-top: 100px;

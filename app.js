@@ -54,178 +54,57 @@ document
 
 
 
-// ща постой я слайдер сделаю 
 
-const slider = document.querySelector('.feedback-wrapper'),
-  slides = Array.from(document.querySelectorAll('.feedback-slider'))
-
-
-let isDragging = false,
-  startPos = 0,
-  currentTranslate = 0,
-  prevTranslate = 0,
-  currentIndex = 0
-
-slides.forEach((slide, index) => {
-  const slideImage = slide.querySelector('.feedback-content')
-  slideImage.addEventListener('dragstart', (e) => e.preventDefault())
-
-  slide.addEventListener('touchstart', touchStart(index))
-  slide.addEventListener('touchend', touchEnd)
-  slide.addEventListener('touchmove', touchMove)
-
-
-  slide.addEventListener('mousedown', touchStart(index))
-  slide.addEventListener('mouseup', touchEnd)
-  slide.addEventListener('mouseleave', touchEnd)
-  slide.addEventListener('mousemove', touchMove)
-})
-
-
-
-
-function touchStart(index) {
-  return function (event) {
-    currentIndex = index
-    startPos = getPositionX(event)
-    isDragging = true
-
-    slider.classList.add('grabbing')
+  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+// reviews swiper 
+var swiper = new Swiper(".swiper",{
+  loop:true,
+  grabCursor:true,
+  spaceBetween:470, 
+  pagination:{
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: true,
+  },
+  breakpoints:{
+    0: {
+    slidesPerView:1,
+  },
+    768: {
+    slidesPerView: 2,
+  },
+    991: {
+    slidesPerView: 3,
+  },
   }
-}
+});
 
-function touchEnd() {
-  isDragging = false
-
-
-  const movedBy = currentTranslate - prevTranslate
-
-  if (movedBy < -100 && currentIndex < slides.length - 1) currentIndex += 1
-
-  if (movedBy > 100 && currentIndex > 0) currentIndex -= 1
-
-  setPositionByIndex()
-
-  slider.classList.remove('grabbing')
-}
-
-function touchMove(event) {
-  if (isDragging) {
-    const currentPosition = getPositionX(event)
-    currentTranslate = prevTranslate + currentPosition - startPos
+var swipe = new Swiper(".equipment-swiper",{
+  loop:true,
+  grabCursor:true,
+  spaceBetween:20, 
+  pagination:{
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: true,
+  },
+  breakpoints:{
+    0: {
+    slidesPerView: 1,
+  },
+    768: {
+    slidesPerView: 1,
+  },
+    991: {
+    slidesPerView: 2,
+  },
   }
-}
-
-function getPositionX(event) {
-  return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX
-}
+});
 
 
-function setSliderPosition() {
-  slider.style.transform = `translateX(${currentTranslate}px)`
-}
-
-function setPositionByIndex() {
-  currentTranslate = currentIndex * -1350
-  prevTranslate = currentTranslate
-  setSliderPosition()
-}
-
-
-
-setInterval(function() {
-  currentIndex = (currentIndex + 1) % slides.length;
-  setPositionByIndex();
-}, 5000);
-
-
-
-
-
-
-
-
-
-
-
-
-
-//equipment -slider
-const equipmentSlider = document.querySelector('.equipment-content'),
- equipmentSlides = Array.from(document.querySelectorAll('.equipment-slider'))
-
-
-let equipmentDragging = false,
-  equipmentStartPos = 0,
-  equipmentCurrentTranslate = 0,
-  equipmentPrevTranslate = 0,
-  equipmentCurrentIndex = 0
-
-  equipmentSlides.forEach((slide, index) => {
-  const equipmentSlideImage = slide.querySelector('.equipment-inner')
-  equipmentSlideImage.addEventListener('dragstart', (e) => e.preventDefault())
-
-  slide.addEventListener('touchstart', eTouchStart(index))
-  slide.addEventListener('touchend', eTouchEnd)
-  slide.addEventListener('touchmove', eTouchMove)
-
-
-  slide.addEventListener('mousedown',eTouchStart(index))
-  slide.addEventListener('mouseup', eTouchEnd)
-  slide.addEventListener('mouseleave', eTouchEnd)
-  slide.addEventListener('mousemove', eTouchMove)
-})
-
-
-
-function eTouchStart(index) {
-  return function (event) {
-    equipmentCurrentIndex = index
-    equipmentStartPos = PositionX(event)
-    equipmentDragging = true
-    equipmentSlider.classList.add('grabbing')
-  }
-}
-
-function eTouchEnd() {
-  equipmentDragging = false
-
-
-  const movedBy =  equipmentCurrentTranslate - equipmentPrevTranslate
-
-  if (movedBy < -100 &&  equipmentCurrentIndex < equipmentSlides.length - 1)  equipmentCurrentIndex += 1
-
-  if (movedBy > 100 &&  equipmentCurrentIndex > 0)  equipmentCurrentIndex -= 1
-
-  PositionByIndex()
-
-  equipmentSlider.classList.remove('grabbing')
-}
-
-function eTouchMove(event) {
-  if (equipmentDragging) {
-    const currentPosition = PositionX(event)
-    equipmentCurrentTranslate = equipmentPrevTranslate + currentPosition - equipmentStartPos
-  }
-}
-
-function PositionX(event) {
-  return event.type.includes('mouse') ? event.pageX : event.touches[0].clientX
-}
-
-
-function SliderPosition() {
-  equipmentSlider.style.transform = `translateX(${equipmentCurrentTranslate}px)`
-}
-
-function PositionByIndex() {
-  equipmentCurrentTranslate =  equipmentCurrentIndex * -1350
-  equipmentPrevTranslate =  equipmentCurrentTranslate
-  SliderPosition()
-}
-
-
-setInterval(function() {
-  equipmentCurrentIndex = ( equipmentCurrentIndex + 1) % equipmentSlides.length;
-  PositionByIndex();
-}, 7000);
