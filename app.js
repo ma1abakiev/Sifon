@@ -1,6 +1,5 @@
 const message = document.getElementById('message')
 const whatsapp = document.getElementById('whatsapp')
-const instagram = document.getElementById('instagram')
 const telegram = document.getElementById('telegram')
 const messageAll = document.getElementById('message-all')
 const messageClose = document.getElementById('message-close')
@@ -9,13 +8,10 @@ const tele = document.querySelector('.phone-tele')
 
 message.addEventListener('click', () => {
   whatsapp.classList.toggle('whatsapp-active')
-  instagram.classList.toggle('instagram-active')
   telegram.classList.toggle('telegram-active')
   messageClose.classList.toggle('message-close__active')
   messageAll.classList.toggle('message-all__active')
 })
-
-
 
 phone.addEventListener('click', () => {
   tele.classList.toggle('phone-tele__active')
@@ -51,56 +47,51 @@ document
       .classList.toggle('header__nav_active')
   })
 
+import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
 
-
-
-
-  import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
-
-var swiper = new Swiper(".reviews-slider",{
-  grabCursor:true,
-  loop:true,
-  spaceBetween:20,
+var swiper = new Swiper('.reviews-slider', {
+  grabCursor: true,
+  loop: true,
+  spaceBetween: 20,
   autoplay: {
     delay: 2000,
   },
-  pagination:{
-    el: ".swiper-pagination",
+  pagination: {
+    el: '.swiper-pagination',
     clickable: true,
   },
-  breakpoints:{
+  breakpoints: {
     0: {
-    slidesPerView: 1,
-  },
+      slidesPerView: 1,
+    },
     768: {
-    slidesPerView: 1,
-  },
+      slidesPerView: 1,
+    },
     1000: {
-    slidesPerView: 3,
+      slidesPerView: 3,
+    },
   },
-  }
-});
+})
 
-var swiper = new Swiper(".equipment-slider",{
-  grabCursor:true,
-  spaceBetween:40,
+var swiper = new Swiper('.equipment-slider', {
+  grabCursor: true,
+  spaceBetween: 40,
   autoplay: {
     delay: 4000,
   },
-  pagination:{
-    el: ".swiper-pagination",
+  pagination: {
+    el: '.swiper-pagination',
     clickable: true,
   },
-  breakpoints:{
+  breakpoints: {
     0: {
-    slidesPerView: 1,
-
-  },
+      slidesPerView: 1,
+    },
     768: {
-    slidesPerView: 1,
-  },
+      slidesPerView: 1,
+    },
     991: {
-    slidesPerView: 1,
+      slidesPerView: 1,
+    },
   },
-  }
-});
+})
