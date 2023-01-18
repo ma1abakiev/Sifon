@@ -56,55 +56,51 @@ document
 
 
   import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
-// reviews swiper 
-var swiper = new Swiper(".swiper",{
-  loop:true,
+
+var swiper = new Swiper(".reviews-slider",{
   grabCursor:true,
-  spaceBetween:470, 
+  loop:true,
+  spaceBetween:20,
+  autoplay: {
+    delay: 2000,
+  },
   pagination:{
     el: ".swiper-pagination",
     clickable: true,
   },
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: true,
-  },
   breakpoints:{
     0: {
-    slidesPerView:1,
+    slidesPerView: 1,
   },
     768: {
-    slidesPerView: 2,
+    slidesPerView: 1,
   },
-    991: {
+    1000: {
     slidesPerView: 3,
   },
   }
 });
 
-var swipe = new Swiper(".equipment-swiper",{
-  loop:true,
+var swiper = new Swiper(".equipment-slider",{
   grabCursor:true,
-  spaceBetween:20, 
+  spaceBetween:40,
+  autoplay: {
+    delay: 4000,
+  },
   pagination:{
     el: ".swiper-pagination",
     clickable: true,
   },
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: true,
-  },
   breakpoints:{
     0: {
     slidesPerView: 1,
+
   },
     768: {
     slidesPerView: 1,
   },
     991: {
-    slidesPerView: 2,
+    slidesPerView: 1,
   },
   }
 });
-
-
